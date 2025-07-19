@@ -106,7 +106,9 @@ export default function DNASpiral() {
       .style("opacity", 0)
       .style("z-index", 1000);
 
-    const tooltipDiv = tooltipEnter.merge(tooltip);
+    const tooltipDiv = (tooltipEnter as d3.Selection<HTMLDivElement, number, HTMLElement, any>).merge(
+      tooltip as unknown as d3.Selection<HTMLDivElement, number, HTMLElement, any>
+    );
 
     // Draw spiral path
     const line = d3.line<any>()

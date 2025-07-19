@@ -101,8 +101,6 @@ export default function Hero() {
                       window.open(button.href, '_blank');
                     }
                   }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                 >
                   <button.icon className="w-4 h-4 mr-2 group-hover:animate-pulse" />
                   {button.label}
